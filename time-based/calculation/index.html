@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Time-Based Metrics - Employee Productivity Measurement</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Employee Productivity Measurement</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../time-based/index.html">Time-Based Metrics</a></li>
+          <li><a href="../../goal-based/index.html">Goal-Based Metrics</a></li>
+          <li><a href="../../efficiency/index.html">Efficiency Metrics</a></li>
+          <li>
+            <a href="../../feedback-based/index.html">Feedback-Based Metrics</a>
+          </li>
+          <li><a href="../../resources/index.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Time-Based Metrics</h1>
+        <form>
+          <label for="total-hours">Total Work Hours:</label>
+          <input type="text" id="total-hours" name="total-hours" /><br />
+
+          <label for="time-on-tasks">Time Spent on Tasks:</label>
+          <input type="text" id="time-on-tasks" name="time-on-tasks" /><br />
+
+          <label for="avg-task-time">Average Task Completion Time:</label>
+          <input type="text" id="avg-task-time" name="avg-task-time" /><br />
+
+          <label for="time-to-resolve">Time to Resolve Customer Issues:</label>
+          <input
+            type="text"
+            id="time-to-resolve"
+            name="time-to-resolve"
+          /><br />
+
+          <input type="button" value="Calculate" onclick="calculate()" />
+        </form>
+      </div>
+      <section>
+        <h2>Results</h2>
+        <div id="results"></div>
+        <canvas id="myChart"></canvas>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Employee Productivity Measurement 2023</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

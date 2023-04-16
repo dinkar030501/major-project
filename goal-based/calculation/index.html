@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Goal-Based Metrics Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Employee Productivity Measurement</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../time-based/index.html">Time-Based Metrics</a></li>
+          <li><a href="../../goal-based/index.html">Goal-Based Metrics</a></li>
+          <li><a href="../../efficiency/index.html">Efficiency Metrics</a></li>
+          <li>
+            <a href="../../feedback-based/index.html">Feedback-Based Metrics</a>
+          </li>
+          <li><a href="../../resources/index.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Goal-Based Metrics Calculator</h2>
+        <form>
+          <label for="sales-targets">Sales Targets:</label>
+          <input
+            type="number"
+            id="sales-targets"
+            name="sales-targets"
+            min="0"
+            step="1"
+            required
+          />
+          <label for="sales">Sales:</label>
+          <input
+            type="number"
+            id="sales"
+            name="sales"
+            min="0"
+            step="1"
+            required
+          />
+
+          <label for="customer-satisfaction-goals"
+            >Customer Satisfaction Goals:</label
+          >
+          <input
+            type="number"
+            id="customer-satisfaction-goals"
+            name="customer-satisfaction-goals"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+          <label for="customer-satisfaction"
+            >Customer Satisfaction achieved:</label
+          >
+          <input
+            type="number"
+            id="customer-satisfaction"
+            name="customer-satisfaction"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+
+          <label for="project-deadlines">Total Projects:</label>
+          <input
+            type="number"
+            id="project-deadlines"
+            name="project-deadlines"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+          <label for="project-completed">Projects Completed:</label>
+          <input
+            type="number"
+            id="project-completed"
+            name="project-completed"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+          <label for="defects">defects:</label>
+          <input
+            type="number"
+            id="defects"
+            name="defects"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+
+          <label for="total-items">Total Items:</label>
+          <input
+            type="number"
+            id="total-items"
+            name="total-items"
+            min="0"
+            max="100"
+            step="1"
+            required
+          />
+
+          <label for="attendance-goals">Attendance Goals:</label>
+          <input
+            type="number"
+            id="attendance-goals"
+            name="attendance-goals"
+            min="0"
+            step="1"
+            required
+          />
+          <label for="attendance">Attendance:</label>
+          <input
+            type="number"
+            id="attendance"
+            name="attendance"
+            min="0"
+            step="1"
+            required
+          />
+
+          <input type="button" value="Calculate" onclick="calculate()" />
+        </form>
+      </section>
+      <section>
+        <h2>Results</h2>
+
+        <div id="results"></div>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

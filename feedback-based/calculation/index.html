@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Metrics Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h1>Feedback Metrics Calculator</h1>
+
+    <form>
+      <label for="customer-satisfaction">Customer Satisfaction:</label>
+      <input
+        type="number"
+        id="customer-satisfaction"
+        name="customer-satisfaction"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label for="360-feedback">360-Degree Feedback:</label>
+      <input
+        type="number"
+        id="360-feedback"
+        name="360-feedback"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label for="performance-reviews">Performance Reviews:</label>
+      <input
+        type="number"
+        id="performance-reviews"
+        name="performance-reviews"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label for="peer-reviews">Peer Reviews:</label>
+      <input
+        type="number"
+        id="peer-reviews"
+        name="peer-reviews"
+        min="0"
+        max="100"
+        required
+      />
+
+      <label for="employee-engagement">Employee Engagement:</label>
+      <input
+        type="number"
+        id="employee-engagement"
+        name="employee-engagement"
+        min="0"
+        max="100"
+        required
+      />
+
+      <button type="button" id="calculate-btn">Calculate Metrics</button>
+    </form>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
