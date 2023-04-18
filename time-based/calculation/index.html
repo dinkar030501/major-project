@@ -26,21 +26,28 @@
       <div class="container">
         <h1>Time-Based Metrics</h1>
         <form>
-          <label for="total-hours">Total Work Hours:</label>
-          <input type="text" id="total-hours" name="total-hours" /><br />
-
-          <label for="time-on-tasks">Time Spent on Tasks:</label>
-          <input type="text" id="time-on-tasks" name="time-on-tasks" /><br />
-
-          <label for="avg-task-time">Average Task Completion Time:</label>
-          <input type="text" id="avg-task-time" name="avg-task-time" /><br />
-
-          <label for="time-to-resolve">Time to Resolve Customer Issues:</label>
-          <input
-            type="text"
-            id="time-to-resolve"
-            name="time-to-resolve"
-          /><br />
+          <div class="input-container">
+            <label for="total-hours">Total Work Hours:</label>
+            <input type="text" id="total-hours" name="total-hours" /><br />
+          </div>
+          <div class="input-container">
+            <label for="time-on-tasks">Time Spent on Tasks:</label>
+            <input type="text" id="time-on-tasks" name="time-on-tasks" /><br />
+          </div>
+          <div class="input-container">
+            <label for="avg-task-time">Average Task Completion Time:</label>
+            <input type="text" id="avg-task-time" name="avg-task-time" /><br />
+          </div>
+          <div class="input-container">
+            <label for="time-to-resolve"
+              >Time to Resolve Customer Issues:</label
+            >
+            <input
+              type="text"
+              id="time-to-resolve"
+              name="time-to-resolve"
+            /><br />
+          </div>
 
           <input type="button" value="Calculate" onclick="calculate()" />
         </form>

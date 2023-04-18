@@ -96,6 +96,16 @@ section ul {
   margin-left: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-container {
+  margin-bottom: 2rem;
+}
+
 /* Footer Styles */
 
 footer {
