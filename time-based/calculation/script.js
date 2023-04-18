@@ -8,15 +8,15 @@ function calculate() {
   );
 
   // Calculate time-based metrics
-  var productivityRate = (timeOnTasks / totalHours) * 100;
+  var productivityRate = (1 - timeOnTasks / totalHours) * 100;
   var taskCompletionRate = (avgTaskTime / totalHours) * 100;
-  var customerIssueRate = (timeToResolve / totalHours) * 100;
+  var customerIssueRate = (1 - timeToResolve / totalHours) * 100;
 
   // Update paragraph with data
   const resultsDiv = document.querySelector("#results");
 
   resultsDiv.innerHTML = `
-    <p>Time Spent on Tasks: ${productivityRate}%</p>
+    <p>Time Spent on Tasks: ${Math.floor(productivityRate)}%</p>
     <p>Average Task Completion Time: ${taskCompletionRate} hours</p>
     <p>Time to Resolve Customer Issues: ${customerIssueRate} hours</p>
   `;
